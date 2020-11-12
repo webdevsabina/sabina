@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Sabina Timilsina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/214f366035.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bubbles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <sectoin id="bubbles" class="light_theme"></sectoin>
+    <section id="container" class="light_theme">
+        <nav>
+            <img id="logo" onclick="aboutMeAction()" src="img/logo-black.png" alt="LOGO">
+            <div id="theme_toggler">
+                <div>
+                    <button id="light_theme_btn" onclick="setLightTheme()">Light</button>
+                    <button id="dark_theme_btn" onclick="setDarkTheme()">Dark</button>
+                </div>
+            </div>
+            <div id="nav_links">
+                <div>
+                    <button id="about_me_btn" class="active_btn" onclick="aboutMeAction()">Intro</button>
+                    <button id="background_btn" onclick="backgroundAction()">Background</button>
+                    <button id="projects_btn" onclick="projectsAction()">Projects</button>
+                    <button id="contact_me_btn" onclick="contactMeAction()">Contact Me</button>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div id="about_me_content">
+                <div id="intro">
+                    <img src="img/circular.png" alt="IMAGE">
+                    <div>
+                        <h1>Hi, I am Sabina Timilsina.</h1>
+                        <h3>
+                            I am a React JS developer at <a href="https://www.newitventure.com/en/" target="_blank">New IT Venture. <i class="fas fa-external-link-square-alt"></i></a>
+                        </h3>
+                        <h3>My expertise is in the area of front-end web development. I love designing and developing responsive, interactive and beautiful websites.</h3>
+                    </div>
+                </div>
+                <img src="img/name-black.png" alt="NAME" id="name_img">
+            </div>
+            <div id="background_content">
+                <h1>Background Content Here ...</h1>
+            </div>
+            <div id="projects_content">
+                <h1>Projects Content Here ...</h1>
+            </div>
+            <div id="contact_me_content">
+                <h1>Send Me a Message</h1>
+                <form autocomplete="off" action="https://formspree.io/f/myybjzag" method="POST">
+                    <div id="error_message" style="display: none;"></div>
+                    <div class="input-wrapper">
+                        <input type="text" id="name_input" name="the_name" required autocomplete="why-chrome-why-are-you-so-obdurate-about-autocomplete" />
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="email_input" name="the_email" required autocomplete="off" />
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="textarea-wrapper">
+                        <span>Message</span>
+                        <textarea id="message_textarea" name="the_message" maxlength="500" cols="40" required placeholder="(Text Here) Less than 500 characters."></textarea>
+                    </div>
+                    <button type="submit" onclick="validateFormData(event)">Send <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="footer_area">
+            <h4>Designed and developed with love by <a href="http://www.prashandip.com.np/" target="_blank">Prashandip. <i class="fas fa-external-link-square-alt"></i></a></h4>
+        </div>
+    </section>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/bubbles.js" type="text/javascript"></script>
+    <script src="js/contact.js" type="text/javascript"></script>
+</body>
+
+</html>
